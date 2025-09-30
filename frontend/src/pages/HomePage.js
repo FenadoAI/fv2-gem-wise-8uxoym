@@ -43,8 +43,16 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 text-center">
-        <div className="max-w-4xl mx-auto px-4">
+      <section className="relative py-20 text-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://storage.googleapis.com/fenado-ai-farm-public/generated/46429c6b-8194-495f-bb35-4a247cd537e8.webp"
+            alt="Luxury Jewelry Collection"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-amber-50/80 to-white/90"></div>
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto px-4">
           <h1 className="text-5xl font-serif font-bold text-amber-900 mb-6">
             Elegant Jewellery,<br />Simplified Management
           </h1>
@@ -97,22 +105,60 @@ export default function HomePage() {
         )}
       </section>
 
+      {/* Craftsmanship Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <img
+                src="https://storage.googleapis.com/fenado-ai-farm-public/generated/51c7fff6-22be-4530-b8c0-871bae4544be.webp"
+                alt="Expert Craftsmanship"
+                className="rounded-lg shadow-xl"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl font-serif font-bold text-amber-900 mb-6">
+                Masterfully Crafted
+              </h2>
+              <p className="text-lg text-gray-700 mb-4">
+                Every piece of jewelry in our collection is created by skilled artisans with years of experience. We combine traditional techniques with modern design to bring you timeless elegance.
+              </p>
+              <p className="text-gray-600">
+                From selecting the finest materials to the final polish, each step is performed with meticulous attention to detail.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features */}
       <section className="py-16 bg-amber-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-4xl mb-4">💎</div>
+              <img
+                src="https://storage.googleapis.com/fenado-ai-farm-public/generated/b763d5af-8834-40df-b5d7-a1f42d879694.webp"
+                alt="Authentic Quality"
+                className="w-24 h-24 mx-auto mb-4 object-cover rounded-full"
+              />
               <h3 className="text-xl font-semibold mb-2">Authentic Quality</h3>
               <p className="text-gray-600">100% genuine precious metals and stones</p>
             </div>
             <div>
-              <div className="text-4xl mb-4">🚚</div>
+              <img
+                src="https://storage.googleapis.com/fenado-ai-farm-public/generated/b73574aa-2c25-4768-97e9-efc866c4ab6a.webp"
+                alt="Cash on Delivery"
+                className="w-24 h-24 mx-auto mb-4 object-cover rounded-full"
+              />
               <h3 className="text-xl font-semibold mb-2">Cash on Delivery</h3>
               <p className="text-gray-600">Pay securely when you receive your order</p>
             </div>
             <div>
-              <div className="text-4xl mb-4">✨</div>
+              <img
+                src="https://storage.googleapis.com/fenado-ai-farm-public/generated/b9fd79f7-0af0-4def-86bb-b40f19d52b27.webp"
+                alt="Handcrafted"
+                className="w-24 h-24 mx-auto mb-4 object-cover rounded-full"
+              />
               <h3 className="text-xl font-semibold mb-2">Handcrafted</h3>
               <p className="text-gray-600">Each piece crafted with precision and care</p>
             </div>
